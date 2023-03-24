@@ -17,4 +17,4 @@ class Post(AbstractModel):
         return f"{self.author.name}"
 
     class Meta:
-        db_table = "'main.post'"
+        db_table = "main_post"
