@@ -1,0 +1,617 @@
+{
+	"info": {
+		"_postman_id": "f96328d4-d343-4a25-a91b-267cbc75fda6",
+		"name": "django-react",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET api/user/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjY0Nzk2LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6IjcyNDUwYWViNWRkZDQwZmU4NGE3ZjQwYTZkYjViNjlkIiwidXNlcl9pZCI6Mn0.dWEGeo7B-vt4ampck9Q1xyPrS6_4y-LV-M1RpA8Y8vA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/post/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjY0Nzk2LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6IjcyNDUwYWViNWRkZDQwZmU4NGE3ZjQwYTZkYjViNjlkIiwidXNlcl9pZCI6Mn0.dWEGeo7B-vt4ampck9Q1xyPrS6_4y-LV-M1RpA8Y8vA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post /api/post/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjUwNTM2LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6ImU5ZjAwZWViMjZkZDQ4ZjQ4NGY3MWIxYTBlYWIzY2FlIiwidXNlcl9pZCI6Mn0.3oEWwooKOlmSJ1YzKue6Jalo2teSpHBbdOB_2kL1qDE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"8998652a482247639e08eaa5b0c5aedd\",\r\n\"body\": \"A simple posted\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post /api/post/ post_id/comment/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjY2MTY0LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6IjE5OWM2OTc1OWUyNDRlMjg5YjA2MWI1OTA1NDIzYjEyIiwidXNlcl9pZCI6Mn0.CaI-2kI2wa8Uii7lFCKw8Ka32uMv2j7POJloNqtEeRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"f1c2cf89b77844c7a60df7538fadcd0b\",\r\n\"body\": \"Hey! I like your post.\",\r\n\"post\": \"2c9c9854380542238c3eea0d9d713605\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/2c9c9854380542238c3eea0d9d713605/comment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"2c9c9854380542238c3eea0d9d713605",
+						"comment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get /api/post/ post_id/comment/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjY2MTY0LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6IjE5OWM2OTc1OWUyNDRlMjg5YjA2MWI1OTA1NDIzYjEyIiwidXNlcl9pZCI6Mn0.CaI-2kI2wa8Uii7lFCKw8Ka32uMv2j7POJloNqtEeRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"f1c2cf89b77844c7a60df7538fadcd0b\",\r\n\"body\": \"Hey! I like your post.\",\r\n\"post\": \"2c9c9854380542238c3eea0d9d713605\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/2c9c9854380542238c3eea0d9d713605/comment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"2c9c9854380542238c3eea0d9d713605",
+						"comment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put/api/post/ post_id/comment/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjY2MTY0LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6IjE5OWM2OTc1OWUyNDRlMjg5YjA2MWI1OTA1NDIzYjEyIiwidXNlcl9pZCI6Mn0.CaI-2kI2wa8Uii7lFCKw8Ka32uMv2j7POJloNqtEeRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"f1c2cf89b77844c7a60df7538fadcd0b\",\r\n\"body\": \"Hey! I SUPER-PUPER like your post.\",\r\n\"post\": \"2c9c9854380542238c3eea0d9d713605\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/2c9c9854380542238c3eea0d9d713605/comment/08eda45da54347a3b70ef33bd6158a43/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"2c9c9854380542238c3eea0d9d713605",
+						"comment",
+						"08eda45da54347a3b70ef33bd6158a43",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del /api/post/ post_id/comment/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjY2MTY0LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6IjE5OWM2OTc1OWUyNDRlMjg5YjA2MWI1OTA1NDIzYjEyIiwidXNlcl9pZCI6Mn0.CaI-2kI2wa8Uii7lFCKw8Ka32uMv2j7POJloNqtEeRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"f1c2cf89b77844c7a60df7538fadcd0b\",\r\n\"body\": \"Hey! I SUPER-PUPER like your post.\",\r\n\"post\": \"2c9c9854380542238c3eea0d9d713605\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/2c9c9854380542238c3eea0d9d713605/comment/57542ed8210f40428db195d9f157b29d/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"2c9c9854380542238c3eea0d9d713605",
+						"comment",
+						"57542ed8210f40428db195d9f157b29d",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like a post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjU2OTAyLCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6ImY2OTMzNGI5ZTk2NDQxNzE4ZDdiMWQ1ZGI1N2Y1ZDc0IiwidXNlcl9pZCI6Mn0.HPk9dqTtEHOtDHRjvkvhOaDldKcHn98iUNMCXuR-f5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"8998652a482247639e08eaa5b0c5aedd\",\r\n\"body\": \"A simple post EDITED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/f0155bdfd6ad4323a21f8abe8a0f1e96/like/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"f0155bdfd6ad4323a21f8abe8a0f1e96",
+						"like",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UnLike a post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjU2OTAyLCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6ImY2OTMzNGI5ZTk2NDQxNzE4ZDdiMWQ1ZGI1N2Y1ZDc0IiwidXNlcl9pZCI6Mn0.HPk9dqTtEHOtDHRjvkvhOaDldKcHn98iUNMCXuR-f5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"8998652a482247639e08eaa5b0c5aedd\",\r\n\"body\": \"A simple post EDITED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/f0155bdfd6ad4323a21f8abe8a0f1e96/remove_like/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"f0155bdfd6ad4323a21f8abe8a0f1e96",
+						"remove_like",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del /api/post/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjU0MTg4LCJpYXQiOjE2Nzk2NTAyMzYsImp0aSI6IjE5YzNkMWE3MTAwZDQ1ZDg4NDFmMTQxMTRkYzFiYWE0IiwidXNlcl9pZCI6Mn0.iFzafJPBp9Ocfm9qJltVreQlQg66DB9rbUaigZkgsl8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"author\": \"8998652a482247639e08eaa5b0c5aedd\",\r\n\"body\": \"A simple post EDITED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/340d0bed07c5455fa7718cfa2fc4d396/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"340d0bed07c5455fa7718cfa2fc4d396",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET api/user/ id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "testuser@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/f1c2cf89b77844c7a60df7538fadcd0b/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"f1c2cf89b77844c7a60df7538fadcd0b",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/auth/login/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "testuser@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"password\": \"12345678\",\r\n\"email\": \"mouse@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/auth/refresh/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "testuser@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3OTczNjYzNiwiaWF0IjoxNjc5NjUwMjM2LCJqdGkiOiJiZmJkZTJkZGQ5NWU0NmYwYmY4NjkyZGI5YTczNmNhOCIsInVzZXJfaWQiOjJ9.u3l4tU0OTFVNv_d5duhPhTBgmqnCTla0UUrgAa3MPtw\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/auth/register/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "testuser@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/f1c2cf89b77844c7a60df7538fadcd0b/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"f1c2cf89b77844c7a60df7538fadcd0b",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
