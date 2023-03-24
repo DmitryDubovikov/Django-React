@@ -8,9 +8,10 @@ from django.contrib.auth.models import (
 from django.core.exceptions import ObjectDoesNotExist
 from django.db import models
 from django.http import Http404
+from main.abstract.models import AbstractModel, AbstractManager
 
 
-class UserManager(BaseUserManager):
+class UserManager(BaseUserManager, AbstractManager):
     def get_object_by_public_id(self, public_id):
 
         try:
@@ -55,7 +56,7 @@ class UserManager(BaseUserManager):
         return user
 
 
-class User(AbstractBaseUser, PermissionsMixin):
+class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
 
     # https://testdriven.io/blog/django-custom-user-model/
 
