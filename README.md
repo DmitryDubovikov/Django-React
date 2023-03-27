@@ -11,5 +11,8 @@ This project is 1/2 test assignment and 1/2 pet project for skills development a
 * drf-spectacular for swagger docs,
 * pytest-django for testing,
 * djangorestframework-simplejwt for JWT auth,
+* ...
 * django-cors-headers,
+* React,
+* axios, axios-auth-refresh package for HTTP requests,
 * ...
