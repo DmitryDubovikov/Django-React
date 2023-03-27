@@ -7,9 +7,7 @@ function RegistrationForm() {
   const navigate = useNavigate();
   const [validated, setValidated] = useState(false);
   const [form, setForm] = useState({});
-  const [error, setError] = useState(null);
-
-  
+  const [error, setError] = useState(null);  
 
   const handleSubmit = (event) => {
     event.preventDefault();
