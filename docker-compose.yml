@@ -34,3 +34,16 @@
       - 5050:80
     depends_on:
       - db
+
+  node:
+    # Аналогично, build из ./reactapp/dockerfile
+    build: ./blogs-app
+    # имя контейнера
+    container_name: reactapp
+    # рестарт
+    restart: always
+    # порты
+    ports:
+      - 3000:3000
+    # команда при запуске
+    command: npm start

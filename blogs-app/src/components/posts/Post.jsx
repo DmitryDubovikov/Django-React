@@ -54,6 +54,7 @@ function Post(props) {
             <div className="d-flex flex-row">
               <Image
                 src={post.author.avatar}
+                // src={'http://localhost:8000' + post.author.avatar}
                 roundedCircle
                 width={48}
                 height={48}
