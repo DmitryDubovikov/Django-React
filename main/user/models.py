@@ -11,6 +11,11 @@ from django.http import Http404
 from main.abstract.models import AbstractModel, AbstractManager
 
 
+def user_directory_path(instance, filename):
+    # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
+    return "user_{0}/{1}".format(instance.public_id, filename)
+
+
 class UserManager(BaseUserManager, AbstractManager):
     def get_object_by_public_id(self, public_id):
 
@@ -69,7 +74,7 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
     is_superuser = models.BooleanField(default=False)
 
     bio = models.TextField(null=True)
-    avatar = models.ImageField(null=True)
+    avatar = models.ImageField(null=True, blank=True, upload_to=user_directory_path)
 
     posts_liked = models.ManyToManyField("main_post.Post", related_name="liked_by")
 
