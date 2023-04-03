@@ -29,12 +29,15 @@ Run in docker:
     python manage.py migrate
 
 Register:
+
     http://127.0.0.1:3000/register/
 
 Write some posts, add comments and likes:
+
     http://127.0.0.1:3000/
 
 Check swagger docs for more:
+
     http://127.0.0.1:8000/api/swagger/docs/
 
 
