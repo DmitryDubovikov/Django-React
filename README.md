@@ -1,4 +1,4 @@
-# Django-React
+# Django-React-Blogs
 
 ## Project description:
 
@@ -26,6 +26,7 @@ Run containers:
     docker-compose up
 
 Run in docker:    
+
     python manage.py migrate
 
 Register:
