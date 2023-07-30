@@ -42,4 +42,4 @@ Check swagger docs for more:
     http://127.0.0.1:8000/api/swagger/docs/
 
 
-![image](https://github.com/DmitryDubovikov/Django-React-Blogs/blob/main/blogs.jpg)
+![image](https://github.com/DmitryDubovikov/DjangoReact-Blogs/blob/main/blogs.jpg)
